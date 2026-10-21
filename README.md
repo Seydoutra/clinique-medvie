@@ -1,16 +1,17 @@
-# Best Medical Center — refonte web
+# Clinique Medvie — refonte web
 
-Portail médical multipage, responsive et sans dépendances pour Best Medical Center.
+Portail médical multipage, responsive et sans dépendances pour Clinique Medvie.
 
 ## Pages incluses
 
 - Accueil et prise de rendez-vous
-- Présentation du centre et de ses espaces
+- Présentation de la clinique, de sa vision et de ses espaces
 - Catalogue des soins avec simulation de réservation
 - Fiches détaillées pour chaque service : indications, prestations, parcours, préparation et FAQ
 - Laboratoire avec recherche d’analyses
 - Annuaire des médecins et parcours professionnels de démonstration
 - Partenaires et simulateur de couverture assurance
+- Pages Contact et Carrière
 - Espace patient interactif : agenda, documents, ordonnances et messagerie
 - Téléconsultation programmée ou urgente avec brief préalable, calendrier de disponibilités, confirmation persistante et accès le jour J
 - Bibliothèque de conseils santé avec recherche, catégories et articles pédagogiques
@@ -31,6 +32,10 @@ Le tableau de bord administrateur est disponible sur `http://localhost:4173/admi
 Dans `pages.js`, renseigner `VIDEO_API.baseUrl` et fournir un `tokenProvider`. Le connecteur crée alors une salle distante via `POST /v1/teleconsultations`. Sans URL d’API, les deux parcours restent en mode démonstration. `app.js` conserve également le connecteur WebRTC de la page d’accueil.
 
 Dans `admin.js`, renseigner `ADMIN_API.baseUrl` et son `tokenProvider` pour connecter les routes de téléconsultations, messages, factures et indicateurs. Sans configuration, le tableau de bord fonctionne intégralement avec des données locales de démonstration.
+
+## Source éditoriale
+
+La structure des services, les coordonnées publiques, les horaires, les chiffres clés et la présentation institutionnelle proviennent du site officiel `https://cliniquemedvie.com/`, consulté le 21 octobre 2026. Les profils médicaux, créneaux et dossiers patients restent explicitement fictifs pour la démonstration.
 
 ## Publication GitHub Pages
 

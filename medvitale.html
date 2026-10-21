@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#073c55">
+  <meta name="description" content="Découvrez Medvitale, la carte santé de Clinique Medvie : bilan, dossier numérique et partage contrôlé avec votre médecin.">
+  <title>Carte Medvitale — Clinique Medvie</title>
+  <link rel="icon" href="logo.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="medvitale.css">
+</head>
+<body class="medvitale-page">
+  <a class="skip-link" href="#main">Aller au contenu</a>
+  <div class="notice-bar"><span class="pulse-dot"></span> Polyclinique ouverte <strong>24h/24 · 7j/7</strong><a class="notice-link" href="contact.html">Nous contacter <span>↗</span></a></div>
+  <header class="site-header medvitale-header" id="header">
+    <a class="brand" href="index.html" aria-label="Clinique Medvie, accueil"><span class="brand-logo"><img src="logo.png" alt="Logo Clinique Medvie" width="56" height="56"></span><span><strong>MEDVIE</strong><small>CLINIQUE 24H/7</small></span></a>
+    <nav class="desktop-nav" aria-label="Navigation principale"><a href="centre.html">La clinique</a><a href="services.html">Soins</a><a href="laboratoire.html">Laboratoire</a><a href="medecins.html">Médecins</a><a class="active nav-medvitale" href="medvitale.html" aria-current="page">Medvitale</a><a href="partenaires.html">Partenaires</a></nav>
+    <div class="header-actions"><a class="btn btn-ghost desktop-only" href="patient.html">Espace patient</a><a class="btn btn-primary" href="#obtenir">Obtenir ma carte</a><button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><i></i><i></i></button></div>
+    <div class="mobile-menu" aria-hidden="true"><a href="centre.html">La clinique</a><a href="services.html">Soins</a><a href="laboratoire.html">Laboratoire</a><a href="medecins.html">Médecins</a><a href="medvitale.html">Medvitale</a><a href="patient.html">Espace patient</a></div>
+  </header>
+
+  <main id="main">
+    <section class="mv-hero">
+      <div class="mv-hero-copy reveal">
+        <p class="mv-eyebrow"><span>Nouvelle génération</span> Carte de santé Medvie</p>
+        <h1>Votre santé.<br><em>Une carte.</em><br>Votre décision.</h1>
+        <p class="mv-lede">Votre bilan et votre dossier médical numérique réunis dans un parcours simple. Vous décidez quand les partager avec votre médecin.</p>
+        <div class="mv-actions"><a class="btn btn-accent btn-large" href="#obtenir">Demander ma carte <span>↗</span></a><a class="mv-text-link" href="#fonctionnement"><span>▶</span> Voir comment ça marche</a></div>
+        <div class="mv-trust"><span>✓ Bilan personnalisé</span><span>✓ Dossier numérique</span><span>✓ Partage validé par vous</span></div>
+      </div>
+      <div class="mv-card-stage reveal delay-1" aria-label="Démonstration interactive de la carte Medvitale">
+        <p class="mv-card-hint"><span>↻</span> Cliquez sur la carte pour la retourner</p>
+        <button class="mv-card" id="medvitaleCard" type="button" aria-pressed="false" aria-label="Retourner la carte Medvitale">
+          <span class="mv-card-inner">
+            <span class="mv-card-face mv-front">
+              <span class="mv-holo"></span><span class="mv-shine"></span>
+              <img src="logo.png" alt="" aria-hidden="true"><span class="mv-card-label">CARTE SANTÉ</span>
+              <strong>MEDVITALE</strong><span class="mv-chip"><i></i><i></i><i></i></span>
+              <span class="mv-person"><b>MARIAMA K.</b><small>N° MV 2026 0042</small></span>
+              <span class="mv-contactless">)))</span>
+            </span>
+            <span class="mv-card-face mv-back">
+              <span class="mv-strip"></span><span class="mv-back-copy"><b>Votre dossier, votre choix.</b><small>Présentez cette carte à l’accueil et validez l’accès avec votre médecin.</small></span>
+              <span class="mv-qr" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+              <span class="mv-demo">CARTE DE DÉMONSTRATION · NON VALIDE</span>
+            </span>
+          </span>
+        </button>
+        <div class="mv-orbit mv-orbit-one"></div><div class="mv-orbit mv-orbit-two"></div>
+      </div>
+    </section>
+
+    <section class="mv-flow section" id="fonctionnement">
+      <div class="mv-section-head reveal"><p class="kicker">Simple, dès le premier bilan</p><h2>Quatre étapes.<br>Vous gardez le contrôle.</h2><p>Découvrez le parcours Medvitale en sélectionnant une étape.</p></div>
+      <div class="mv-flow-grid">
+        <div class="mv-steps reveal" role="tablist" aria-label="Parcours Medvitale">
+          <button class="active" role="tab" aria-selected="true" aria-controls="mv-step-panel" data-step="0"><span>01</span><div><b>Réalisez votre bilan</b><small>Complet ou partiel à la clinique</small></div></button>
+          <button role="tab" aria-selected="false" aria-controls="mv-step-panel" data-step="1"><span>02</span><div><b>Recevez votre carte</b><small>Associée à votre parcours santé</small></div></button>
+          <button role="tab" aria-selected="false" aria-controls="mv-step-panel" data-step="2"><span>03</span><div><b>Consultez votre dossier</b><small>Depuis votre espace numérique</small></div></button>
+          <button role="tab" aria-selected="false" aria-controls="mv-step-panel" data-step="3"><span>04</span><div><b>Autorisez le partage</b><small>Avec le médecin de votre choix</small></div></button>
+        </div>
+        <article class="mv-step-panel reveal delay-1" id="mv-step-panel" role="tabpanel" tabindex="0">
+          <div class="mv-panel-number">01</div><p class="kicker" id="mv-panel-kicker">Votre point de départ</p><h3 id="mv-panel-title">Un bilan adapté à vos besoins.</h3><p id="mv-panel-text">Commencez par un bilan complet ou partiel à Clinique Medvie. L’équipe vous oriente vers les examens pertinents selon votre situation.</p><a class="btn btn-primary" id="mv-panel-link" href="laboratoire.html">Découvrir les bilans <span>→</span></a>
+          <div class="mv-panel-visual"><span class="mv-pulse-ring"></span><b id="mv-panel-icon">＋</b></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="mv-control section" id="autorisation">
+      <div class="mv-control-card reveal"><p class="kicker light">Pensée autour de vous</p><h2>Votre dossier ne circule pas sans vous.</h2><p>Avec Medvitale, vous effectuez les validations nécessaires avant de partager votre dossier médical numérique avec un professionnel de santé.</p><div class="mv-control-demo"><div><span>Votre carte</span><b>MV · 0042</b></div><i class="mv-connection"></i><div><span>Médecin</span><b>Accès demandé</b></div><button id="authorizeDemo" type="button"><span>✓</span><b>Autoriser l’accès</b><small>Démonstration interactive</small></button></div></div>
+      <div class="mv-benefits reveal delay-1"><article><span>01</span><h3>Une histoire médicale plus claire</h3><p>Les informations utiles sont regroupées pour faciliter la compréhension de votre parcours.</p></article><article><span>02</span><h3>Une décision éclairée</h3><p>Le médecin peut tenir compte des éléments que vous choisissez de rendre accessibles.</p></article><article><span>03</span><h3>Un parcours plus continu</h3><p>Bilan, dossier et suivi s’inscrivent dans un même environnement.</p></article></div>
+    </section>
+
+    <section class="mv-access section" id="obtenir">
+      <div class="mv-access-copy reveal"><p class="kicker">Passez à Medvitale</p><h2>Commencez par votre bilan.</h2><p>Choisissez le type de bilan qui vous intéresse. Cette démonstration prépare votre demande sans transmettre de donnée médicale.</p><div class="mv-choice" role="radiogroup" aria-label="Type de bilan"><button class="active" role="radio" aria-checked="true" data-plan="Bilan complet"><span>Complet</span><b>Une vue d’ensemble</b><small>Pour faire le point sur votre santé.</small></button><button role="radio" aria-checked="false" data-plan="Bilan partiel"><span>Ciblé</span><b>Un besoin précis</b><small>Pour explorer un sujet particulier.</small></button></div><button class="btn btn-accent btn-large" id="requestCard">Préparer ma demande <span>↗</span></button><a class="mv-existing" href="patient.html">J’ai déjà une carte — accéder à mon dossier <span>→</span></a></div>
+      <div class="mv-request-card reveal delay-1"><div class="mv-request-top"><img src="logo.png" alt="Clinique Medvie"><span>Demande Medvitale</span></div><div class="mv-request-body"><p>Votre sélection</p><h3 id="selectedPlan">Bilan complet</h3><ul><li><span>1</span>Choix du créneau</li><li><span>2</span>Accueil à la clinique</li><li><span>3</span>Remise de la carte</li></ul><div class="mv-request-status"><i></i><span>Prêt à démarrer</span></div></div></div>
+    </section>
+
+    <section class="mv-faq section"><div class="mv-section-head reveal"><p class="kicker">Questions fréquentes</p><h2>L’essentiel, sans jargon.</h2></div><div class="mv-faq-list reveal delay-1"><details><summary>À quoi sert la carte Medvitale ?<span>＋</span></summary><p>Elle vous permet d’accéder à votre dossier médical numérique et d’effectuer les validations nécessaires pour le partager avec un médecin.</p></details><details><summary>Comment obtenir la carte ?<span>＋</span></summary><p>Le parcours commence par un bilan de santé complet ou partiel auprès de Clinique Medvie. L’équipe vous explique ensuite l’activation de la carte.</p></details><details><summary>Le médecin accède-t-il automatiquement à mon dossier ?<span>＋</span></summary><p>Non. Le partage nécessite votre validation. La démonstration sur cette page illustre ce contrôle sans traiter de données réelles.</p></details></div></section>
+  </main>
+
+  <footer><div class="footer-main"><a class="brand footer-brand" href="index.html"><span class="brand-logo"><img src="logo.png" alt="" width="152" height="58"></span><span><strong>MEDVIE</strong><small>CLINIQUE 24H/7</small></span></a><p>Votre santé mérite un parcours simple, humain et coordonné.</p><div class="footer-links"><div><strong>Navigation</strong><a href="services.html">Nos soins</a><a href="centre.html">La clinique</a><a href="conseils.html">Conseils</a></div><div><strong>Patients</strong><a href="medvitale.html">Carte Medvitale</a><a href="teleconsultation.html">Téléconsultation</a><a href="patient.html">Espace patient</a></div><div><strong>Contact</strong><a href="mailto:info@cliniquemedvie.com">info@cliniquemedvie.com</a><a href="tel:+224627924141">(+224) 627 924 141</a><span>Kipé · Kaporo Centre · Conakry</span></div></div></div><div class="footer-bottom"><span>© 2026 Clinique Medvie</span><span>Confidentialité · Mentions légales</span><span>Site de démonstration</span></div></footer>
+  <div class="mv-toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script><script src="medvitale.js"></script>
+</body>
+</html>

@@ -3,23 +3,24 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#07553f">
-  <meta name="description" content="Best Medical Center — consultations, analyses médicales et téléconsultation, avec un parcours de soins simple et humain.">
-  <title>Best Medical Center — Votre santé, simplement</title>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%2307553f'/%3E%3Cpath d='M17 16h18c9 0 14 4 14 11 0 4-2 7-6 9 5 2 7 5 7 10 0 8-6 12-16 12H17V16zm11 9v8h7c3 0 5-1 5-4s-2-4-5-4h-7zm0 16v9h8c3 0 5-2 5-5s-2-4-5-4h-8z' fill='white'/%3E%3C/svg%3E">
+  <meta name="theme-color" content="#087ea4">
+  <meta name="description" content="Clinique Medvie — consultations, analyses médicales et téléconsultation, avec un parcours de soins simple et humain.">
+  <title>Clinique Medvie — Votre santé, simplement</title>
+  <link rel="icon" href="logo.png">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="medvitale.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Aller au contenu</a>
-  <div class="notice-bar"><span class="pulse-dot"></span> Urgences & soins sans rendez-vous <strong>7j/7</strong><button class="notice-link" data-action="appointment">Prendre rendez-vous <span>↗</span></button></div>
+  <div class="notice-bar"><span class="pulse-dot"></span> Polyclinique ouverte <strong>24h/24 · 7j/7</strong><button class="notice-link" data-action="appointment">Prendre rendez-vous <span>↗</span></button></div>
 
   <header class="site-header" id="header">
-    <a class="brand" href="#accueil" aria-label="Best Medical Center, accueil">
-      <span class="brand-logo"><img src="logo.png" alt="Logo Best Medical Center" width="56" height="56"></span>
-      <span><strong>BEST</strong><small>MEDICAL CENTER</small></span>
+    <a class="brand" href="#accueil" aria-label="Clinique Medvie, accueil">
+      <span class="brand-logo"><img src="logo.png" alt="Logo Clinique Medvie" width="56" height="56"></span>
+      <span><strong>MEDVIE</strong><small>CLINIQUE 24H/7</small></span>
     </a>
     <nav class="desktop-nav" aria-label="Navigation principale">
-      <a href="centre.html">Le centre</a><a href="services.html">Soins</a><a href="laboratoire.html">Laboratoire</a><a href="medecins.html">Médecins</a><a href="conseils.html">Conseils</a><a href="partenaires.html">Partenaires</a>
+      <a href="centre.html">La clinique</a><a href="services.html">Soins</a><a href="laboratoire.html">Laboratoire</a><a href="medecins.html">Médecins</a><a class="nav-medvitale" href="medvitale.html">Medvitale</a><a href="partenaires.html">Partenaires</a>
     </nav>
     <div class="header-actions">
       <a class="btn btn-ghost desktop-only" href="patient.html"><span class="icon-user"></span>Espace patient</a>
@@ -27,7 +28,7 @@
       <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><i></i><i></i></button>
     </div>
     <div class="mobile-menu" aria-hidden="true">
-      <a href="centre.html">Le centre</a><a href="services.html">Soins</a><a href="laboratoire.html">Laboratoire</a><a href="medecins.html">Médecins</a><a href="conseils.html">Conseils</a><a href="partenaires.html">Partenaires</a>
+      <a href="centre.html">La clinique</a><a href="services.html">Soins</a><a href="laboratoire.html">Laboratoire</a><a href="medecins.html">Médecins</a><a href="medvitale.html">Medvitale</a><a href="conseils.html">Conseils</a><a href="partenaires.html">Partenaires</a>
       <a class="btn btn-ghost" href="patient.html">Espace patient</a>
     </div>
   </header>
@@ -35,9 +36,9 @@
   <main id="main">
     <section class="hero" id="accueil">
       <div class="hero-copy reveal">
-        <div class="eyebrow"><span></span> Un centre médical proche de vous</div>
-        <h1>Des soins qui commencent par <em>vous écouter.</em></h1>
-        <p class="hero-lede">Consultation, suivi, analyses et téléconsultation dans un même parcours — plus clair, plus humain, plus rapide.</p>
+        <div class="eyebrow"><span></span> Kipé · Kaporo Centre · Conakry</div>
+        <h1>La médecine,<br><em>au service de la vie.</em></h1>
+        <p class="hero-lede">Une polyclinique ouverte 24h/7 qui réunit consultation, spécialités, laboratoire, imagerie, chirurgie, urgences et hospitalisation.</p>
         <div class="hero-actions">
           <button class="btn btn-accent btn-large" data-action="appointment">Prendre rendez-vous <span>↗</span></button>
           <button class="text-link" data-action="teleconsult"><span class="play">▶</span> Consulter en ligne</button>
@@ -49,16 +50,16 @@
       </div>
       <div class="hero-visual reveal delay-1">
         <div class="hero-photo-wrap">
-          <img src="equipe-medicale.jpg" alt="L’équipe médicale de Best Medical Center" width="810" height="1080">
+          <img src="equipe-medicale.jpg?v=medvie2" alt="L’équipe médicale de Clinique Medvie" width="810" height="1080">
           <div class="photo-scrim"></div>
-          <div class="hero-caption"><span class="caption-mark">B</span><p><strong>Votre santé.<br>Notre priorité.</strong><small>Une prise en charge attentive, à chaque étape.</small></p></div>
+          <div class="hero-caption"><span class="caption-mark">M</span><p><strong>Medvie.<br>Médecine de la vie.</strong><small>Écoute, proximité et qualité des soins.</small></p></div>
         </div>
         <div class="availability-card floating-card">
           <span class="status-icon">✓</span><div><small>Prochain créneau</small><strong>Aujourd’hui · 16:30</strong></div><button data-action="appointment" aria-label="Réserver le prochain créneau">→</button>
         </div>
         <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
       </div>
-      <div class="scroll-cue"><span></span>Découvrir le centre</div>
+      <div class="scroll-cue"><span></span>Découvrir la clinique</div>
     </section>
 
     <section class="quick-access" aria-label="Accès rapides">
@@ -67,26 +68,42 @@
       <button data-action="dashboard"><span class="qa-icon">▤</span><span><small>Je veux</small><strong>Voir mes résultats</strong></span><b>→</b></button>
     </section>
 
+    <section class="medvitale-home section" aria-labelledby="medvitale-home-title">
+      <div class="medvitale-home-copy reveal">
+        <p class="kicker">Votre santé, toujours avec vous</p>
+        <h2 id="medvitale-home-title">Une carte.<br><em>Tout votre parcours.</em></h2>
+        <p>Medvitale relie votre bilan de santé à un dossier médical numérique que vous pouvez consulter et partager avec le médecin de votre choix, après validation.</p>
+        <div class="medvitale-home-actions">
+          <a class="btn btn-accent btn-large" href="medvitale.html">Découvrir Medvitale <span>↗</span></a>
+          <a class="text-link dark" href="patient.html">J’ai déjà une carte <span>→</span></a>
+        </div>
+        <ul class="medvitale-home-points"><li>Bilan complet ou partiel</li><li>Dossier numérique</li><li>Partage sous votre contrôle</li></ul>
+      </div>
+      <a class="mini-medvitale-card reveal delay-1" href="medvitale.html" aria-label="Découvrir la carte Medvitale">
+        <span class="mini-card-glow"></span><img src="logo.png" alt="" aria-hidden="true"><small>CARTE SANTÉ</small><strong>MEDVITALE</strong><p><b>MARIAMA K.</b><span>MV · 2026 · 0042</span></p><i>↗</i>
+      </a>
+    </section>
+
     <section class="care-section section" id="expertises">
       <div class="section-heading reveal">
         <div><span class="section-index">01</span><p class="kicker">Nos expertises</p></div>
         <h2>Tout ce qu’il faut<br>pour prendre soin de vous.</h2>
-        <p>Un parcours coordonné, des professionnels disponibles et des services pensés pour réduire l’attente.</p>
+        <p>Un plateau de soins complet et des professionnels disponibles, réunis autour d’une prise en charge coordonnée.</p>
       </div>
       <div class="service-grid">
         <article class="service-card service-featured reveal">
           <div class="service-top"><span>01</span><i>↗</i></div><div class="service-icon">✚</div>
           <h3>Médecine générale</h3><p>Prévention, diagnostic et suivi personnalisé pour toute la famille.</p><button data-action="appointment">Consulter un médecin <span>→</span></button>
         </article>
-        <article class="service-card reveal delay-1"><div class="service-top"><span>02</span><i>↗</i></div><div class="service-icon">◉</div><h3>Analyses médicales</h3><p>Des prélèvements sur place et des résultats accessibles dans votre espace patient.</p><button data-action="dashboard">Voir le service <span>→</span></button></article>
-        <article class="service-card reveal delay-2"><div class="service-top"><span>03</span><i>↗</i></div><div class="service-icon">♡</div><h3>Suivi & prévention</h3><p>Bilans de santé, dépistage et accompagnement à chaque étape de la vie.</p><button data-action="appointment">Planifier un bilan <span>→</span></button></article>
-        <article class="service-card reveal delay-3"><div class="service-top"><span>04</span><i>↗</i></div><div class="service-icon">⌁</div><h3>Téléconsultation</h3><p>Échangez en vidéo avec un praticien, en toute simplicité et confidentialité.</p><button data-action="teleconsult">Démarrer en ligne <span>→</span></button></article>
+        <article class="service-card reveal delay-1"><div class="service-top"><span>02</span><i>↗</i></div><div class="service-icon">◉</div><h3>Laboratoire</h3><p>Un laboratoire moderne avec des résultats fiables et accessibles sur support numérique.</p><button data-action="dashboard">Voir mes résultats <span>→</span></button></article>
+        <article class="service-card reveal delay-2"><div class="service-top"><span>03</span><i>↗</i></div><div class="service-icon">✦</div><h3>Imagerie</h3><p>IRM, scanner, échographie et examens d’imagerie sur un plateau intégré.</p><button data-action="appointment">Réserver un examen <span>→</span></button></article>
+        <article class="service-card reveal delay-3"><div class="service-top"><span>04</span><i>↗</i></div><div class="service-icon">⚡</div><h3>Urgences 24h/7</h3><p>Une équipe disponible à toute heure pour évaluer, stabiliser et orienter.</p><button data-action="appointment">Demander une orientation <span>→</span></button></article>
       </div>
     </section>
 
     <section class="tele-section section" id="teleconsultation">
       <div class="tele-visual reveal">
-        <div class="tele-photo"><img src="accueil-soignante.jpg" alt="Professionnelle de santé de Best Medical Center" loading="lazy"><span class="secure-pill">● Connexion sécurisée</span></div>
+        <div class="tele-photo"><img src="accueil-soignante.jpg?v=medvie2" alt="Professionnelle de santé de Clinique Medvie" loading="lazy"><span class="secure-pill">● Connexion sécurisée</span></div>
         <div class="call-ui">
           <div><span></span><b>Dr. A. Barry</b><small>Médecine générale</small></div>
           <p class="call-time">12:08</p>
@@ -108,10 +125,10 @@
 
     <section class="experience section" id="parcours">
       <div class="experience-copy reveal">
-        <span class="section-index light">03</span><p class="kicker light">L’expérience Best Medical Center</p>
+        <span class="section-index light">03</span><p class="kicker light">L’expérience Clinique Medvie</p>
         <h2>Moins d’attente.<br>Plus d’attention.</h2>
         <p>Chaque détail est pensé pour que vous sachiez quoi faire, où aller et ce qui vient ensuite.</p>
-        <div class="stats"><div><strong data-count="7">0</strong><span>jours sur 7</span></div><div><strong data-count="4">0</strong><span>étapes simplifiées</span></div><div><strong data-count="1">0</strong><span>espace patient</span></div></div>
+        <div class="stats"><div><strong data-count="24">0</strong><span>heures sur 24</span></div><div><strong data-count="14">0</strong><span>spécialités médicales</span></div><div><strong data-count="15">0</strong><span>salles d’hospitalisation</span></div></div>
       </div>
       <div class="journey-card reveal delay-1">
         <div class="journey-head"><span>Votre parcours</span><small>Aujourd’hui</small></div>
@@ -126,7 +143,7 @@
     </section>
 
     <section class="team-section section" id="equipe">
-      <div class="team-image reveal"><img src="accompagnement-patiente.jpg" alt="Accompagnement d’une patiente par l’équipe soignante" loading="lazy"><div class="quote-card"><span>“</span><p>Vous expliquer, vous rassurer et avancer avec vous.</p></div></div>
+      <div class="team-image reveal"><img src="accompagnement-patiente.jpg?v=medvie2" alt="Accompagnement d’une patiente par l’équipe soignante" loading="lazy"><div class="quote-card"><span>“</span><p>Vous expliquer, vous rassurer et avancer avec vous.</p></div></div>
       <div class="team-copy reveal delay-1"><span class="section-index">04</span><p class="kicker">Une équipe à vos côtés</p><h2>La compétence,<br>avec l’humain en plus.</h2><p>Des professionnels mobilisés autour d’un même objectif : vous proposer une prise en charge claire, coordonnée et respectueuse.</p><button class="text-link dark" data-action="appointment">Rencontrer notre équipe <span>→</span></button></div>
     </section>
 
@@ -137,8 +154,8 @@
   </main>
 
   <footer>
-    <div class="footer-main"><a class="brand footer-brand" href="#accueil"><span class="brand-logo"><img src="logo.png" alt="" width="56" height="56"></span><span><strong>BEST</strong><small>MEDICAL CENTER</small></span></a><p>Votre santé mérite un parcours simple, humain et coordonné.</p><div class="footer-links"><div><strong>Navigation</strong><a href="#expertises">Nos soins</a><a href="#equipe">Notre équipe</a><a href="#parcours">Votre parcours</a></div><div><strong>Patients</strong><button data-action="appointment">Rendez-vous</button><button data-action="teleconsult">Téléconsultation</button><button data-action="dashboard">Espace patient</button></div><div><strong>Contact</strong><a href="mailto:contact@bestmedicalcenter.com">contact@bestmedicalcenter.com</a><span>Lun–Dim · 7j/7</span></div></div></div>
-    <div class="footer-bottom"><span>© 2026 Best Medical Center</span><span>Confidentialité · Mentions légales</span><span>Site de démonstration · <a href="admin.html">Administration</a></span></div>
+    <div class="footer-main"><a class="brand footer-brand" href="#accueil"><span class="brand-logo"><img src="logo.png" alt="" width="152" height="58"></span><span><strong>MEDVIE</strong><small>CLINIQUE 24H/7</small></span></a><p>Votre santé mérite un parcours simple, humain et coordonné.</p><div class="footer-links"><div><strong>Navigation</strong><a href="services.html">Nos soins</a><a href="centre.html">La clinique</a><a href="medvitale.html">Carte Medvitale</a><a href="conseils.html">Conseils santé</a><a href="contact.html">Nous trouver</a></div><div><strong>Patients</strong><button data-action="appointment">Rendez-vous</button><button data-action="teleconsult">Téléconsultation</button><button data-action="dashboard">Espace patient</button></div><div><strong>Contact</strong><a href="mailto:info@cliniquemedvie.com">info@cliniquemedvie.com</a><a href="tel:+224627924141">(+224) 627 924 141</a><span>Kipé · Kaporo Centre · Conakry</span></div></div></div>
+    <div class="footer-bottom"><span>© 2026 Clinique Medvie</span><span>Confidentialité · Mentions légales</span><span>Site de démonstration · <a href="admin.html">Administration</a></span></div>
   </footer>
 
   <div class="modal" id="appointmentModal" role="dialog" aria-modal="true" aria-labelledby="appointmentTitle" hidden>
@@ -151,7 +168,7 @@
 
   <div class="modal" id="dashboardModal" role="dialog" aria-modal="true" aria-labelledby="dashboardTitle" hidden>
     <div class="dashboard-shell">
-      <aside class="dash-sidebar"><div class="dash-brand"><img src="logo.png" alt="Best Medical Center"><strong>BEST</strong></div><nav><button class="active" data-dash="overview">⌂ <span>Vue d’ensemble</span></button><button data-dash="appointments">▣ <span>Rendez-vous</span></button><button data-dash="documents">▤ <span>Mes documents</span><b>3</b></button><button data-dash="messages">◌ <span>Messagerie</span><b>1</b></button></nav><div class="dash-help"><span>?</span><strong>Besoin d’aide ?</strong><small>Notre équipe vous répond.</small><button>Nous contacter</button></div><button class="dash-logout" data-close>← Quitter la démo</button></aside>
+      <aside class="dash-sidebar"><div class="dash-brand"><img src="logo.png" alt="Clinique Medvie"><strong>MEDVIE</strong></div><nav><button class="active" data-dash="overview">⌂ <span>Vue d’ensemble</span></button><button data-dash="appointments">▣ <span>Rendez-vous</span></button><button data-dash="documents">▤ <span>Mes documents</span><b>3</b></button><button data-dash="messages">◌ <span>Messagerie</span><b>1</b></button></nav><div class="dash-help"><span>?</span><strong>Besoin d’aide ?</strong><small>Notre équipe vous répond.</small><button>Nous contacter</button></div><button class="dash-logout" data-close>← Quitter la démo</button></aside>
       <section class="dash-main"><header class="dash-header"><button class="dash-menu" aria-label="Menu">☰</button><div><p>Bonjour, Mariama</p><small>Dimanche 28 septembre 2026</small></div><div class="dash-user"><button aria-label="Notifications">♢<i></i></button><span>MK</span><div><strong>Mariama K.</strong><small>Patiente</small></div><button class="modal-close dash-close" data-close aria-label="Fermer">×</button></div></header>
         <div class="dash-content" id="dashboardContent"><div class="dash-title"><div><p class="kicker">Mon espace santé</p><h2 id="dashboardTitle">Vue d’ensemble</h2></div><button class="btn btn-primary" data-action="appointment">＋ Nouveau rendez-vous</button></div>
           <div class="dash-grid"><article class="next-card"><div class="card-heading"><span>Prochain rendez-vous</span><button>•••</button></div><div class="doctor-row"><div class="doctor-avatar">AB</div><div><h3>Dr. A. Barry</h3><p>Médecine générale</p></div><span class="tag-video">⌁ Vidéo</span></div><div class="appt-details"><div><small>Date</small><strong>Demain, 29 sept.</strong></div><div><small>Heure</small><strong>10:30 · 30 min</strong></div></div><button class="btn btn-accent btn-full" data-action="teleconsult">Rejoindre la consultation <span>→</span></button><small class="available-note"><i></i> La salle ouvre 10 minutes avant</small></article>
