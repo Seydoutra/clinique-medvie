@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#073d32">
   <meta name="description" content="Démonstration du centre de pilotage Clinique Medvie.">
   <title>Administration — Clinique Medvie</title>
-  <link rel="stylesheet" href="admin.css">
+  <link rel="stylesheet" href="admin.css?v=ui2">
 </head>
 <body>
   <a class="skip" href="#adminMain">Aller au contenu</a>
@@ -95,5 +95,5 @@
   <div class="modal" id="smsModal" hidden><button class="modal-backdrop" aria-label="Fermer"></button><section class="sms-compose" role="dialog" aria-modal="true" aria-labelledby="smsTitle"><header><div><p>Communication patient</p><h2 id="smsTitle">Envoyer un SMS</h2></div><button class="modal-close" aria-label="Fermer">×</button></header><form id="smsForm"><label>Destinataires<select id="smsRecipients" required><option value="patient">Un patient</option><option value="tomorrow">Rendez-vous de demain (18)</option><option value="video">Téléconsultations du jour (24)</option><option value="unpaid">Factures à relancer (7)</option></select></label><label id="patientField">Patient<input id="smsPatient" value="Mariama Kourouma" required></label><label>Modèle<select id="smsTemplate"><option value="custom">Message personnalisé</option><option value="reminder">Rappel de rendez-vous</option><option value="followup">Suivi après consultation</option><option value="results">Résultats disponibles</option><option value="payment">Rappel de paiement</option></select></label><label>Message<textarea id="smsText" maxlength="320" rows="6" required placeholder="Écrivez votre message…"></textarea><small><span id="smsChars">0</span>/320 caractères · <b id="smsParts">1 SMS</b></small></label><div class="phone-preview"><i>CLINIQUE MEDVIE</i><p id="smsPreview">Votre message apparaîtra ici.</p><small>Maintenant</small></div><footer><button type="button" class="secondary modal-close">Annuler</button><button type="submit" class="primary">Envoyer le SMS →</button></footer></form></section></div>
   <div class="toast" id="adminToast" role="status" aria-live="polite"><span>✓</span><p></p></div>
   <script src="admin.js"></script>
-</body>
+<script src="icons.js?v=ui2"></script></body>
 </html>
